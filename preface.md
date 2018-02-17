@@ -76,7 +76,7 @@ Yin, Lihao Wang, Martha Ferris, Masashi Kishikawa (Sony), Matt Reichoff, Matty W
 
 ## 参考文献
 
-[^CK+08]
+[^CK+08] “xv6操作系统” 
 
 [^F96]
 
