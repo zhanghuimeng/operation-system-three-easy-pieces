@@ -1,6 +1,7 @@
 # 前言
 
 ## 致所有人
+
 欢迎来看这本书！我们希望你享受阅读本书的过程，就像我们享受撰写本书的过程那样。这本书的书名是**《操作系统：三堂简单的课》**（Operating Systems: Three Easy Pieces）[^1]，显然，这是对有史以来最棒的课程讲义，《费曼物理学讲义》（Six Easy Pieces: Essentials Of Physics Explained By Its Most Brilliant Teacher）的致敬。[^F96]毫无疑问，本书达不到这位著名物理学家设置的高标准，但它仍可能在你理解何为操作系统（或者更广义地，系统）的征程上祝你一臂之力。
 
 “三堂课”指的是组成这本书的三个专题：**虚拟化**（virtualization），**并发**（concurrency）和**持久化**（persistence）。这些概念的介绍过程将涉及到操作系统中的大部分关键要素；希望你们能在学习过程中得到乐趣。学习新东西是很有趣的，对吧？至少应该是这样。
@@ -29,11 +30,11 @@
 
 对本书的正确引用如下：
 
-> Operating Systems: Three Easy Pieces
-> Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
-> Arpaci-Dusseau Books
-> March, 2015 (Version 0.90)
-> http://www.ostep.org
+> Operating Systems: Three Easy Pieces  
+> Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau  
+> Arpaci-Dusseau Books  
+> March, 2015 \(Version 0.90\)  
+> [http://www.ostep.org](http://www.ostep.org)
 
 使用本书作为教材时，如果课程时间为15周，那么应该能够以合理的难度水平涉及大部分主体。但如果把时间压缩到10周，那么就需要舍弃一些细节。我们通常会压缩关于虚拟机监控程序（virtual machine monitors）的几章，把它们安排在虚拟化专题的最后部分，或者作为学期最后的附加内容。
 
@@ -57,8 +58,7 @@
 
 这一节的内容是感谢那些帮助我们撰写这本书的人。现在请听好：**你的名字也可以出现在这里！**但你需要帮助我们。所以请给我们一些反馈，帮助我们找出这本书中的错误。这样你就能出名了！或者，至少你的名字会出现在这里。
 
-帮助过我们的人包括：Abhirami Senthilkumaran*, Adam Drescher* (WUSTL), Adam Eggum, Aditya Venkataraman, Adriana Iamnitchi and class (USF), Ahmed Fikri*, Ajaykrishna Raghavan, Akiel Khan, Alex Wyler, Ali Razeen (Duke), AmirBehzad Eslami, Anand Mundada, Andrew Valencik (Saint Mary’s), Angela Demke Brown (Toronto), B. Brahmananda Reddy (Minnesota), Bala Subrahmanyam Kambala, Benita Bose, Biswajit Mazumder (Clemson), Bobby Jack, Bjorn Lindberg, Brennan Payne, Brian Gorman, Brian Kroth, Caleb Sumner (Southern Adventist), Cara Lauritzen, Charlotte Kissinger, Chien-Chung Shen (Delaware)*, Christoph Jaeger, Cody Hanson, Dan Soendergaard (U. Aarhus), David Hanle (Grinnell), David Hartman, Deepika Muthukumar, Dheeraj Shetty (North Carolina State), Dorian Arnold (New Mexico), Dustin Metzler, Dustin Passofaro, Eduardo Stelmaszczyk, Emad Sadeghi, Emily Jacobson, Emmett Witchel (Texas), Erik Turk, Ernst Biersack (France), Finn Kuusisto*, Glen Granzow (College of Idaho), Guilherme Baptista, Hamid Reza Ghasemi, Hao Chen, Henry Abbey, Hrishikesh Amur, Huanchen Zhang*, Huseyin Sular, Hugo Diaz, Itai Hass (Toronto), Jake Gillberg, Jakob Olandt, James Perry (U. Michigan-Dearborn)*, Jan Reineke (Universitat des Saarlandes), Jay Lim, Jerod Weinman (Grinnell), Jiao Dong (Rutgers), Jingxin Li, Joe Jean (NYU), Joel Kuntz (Saint Mary’s), Joel Sommers (Colgate), John Brady (Grinnell), Jonathan Perry (MIT), Jun He, Karl Wallinger, Kartik Singhal, Kaushik Kannan, Kevin Liu*, Lei Tian (U. Nebraska-Lincoln), Leslie Schultz, Liang
-Yin, Lihao Wang, Martha Ferris, Masashi Kishikawa (Sony), Matt Reichoff, Matty Williams, Meng Huang, Michael Walfish (NYU), Mike Griepentrog, Ming Chen (Stonybrook), Mohammed Alali (Delaware), Murugan Kandaswamy, Natasha Eilbert, Nathan Dipiazza, Nathan Sullivan, Neeraj Badlani (N.C. State), Nelson Gomez, Nghia Huynh (Texas), Nick Weinandt, Patricio Jara, Perry Kivolowitz, Radford Smith, Riccardo Mutschlechner, Ripudaman Singh, Robert Ordonez and class (Southern Adventist), Rohan Das (Toronto)*, Rohan Pasalkar (Minnesota), Ross Aiken, Ruslan Kiselev, Ryland Herrick, Samer Al-Kiswany, Sandeep Ummadi (Minnesota), Satish Chebrolu (NetApp), Satyanarayana Shanmugam*, Seth Pollen, Sharad Punuganti, Shreevatsa R., Sivaraman Sivaraman*, Srinivasan Thirunarayanan*, Suriyhaprakhas Balaram Sankari, Sy Jin Cheah, Teri Zhao (EMC), Thomas Griebel, Tongxin Zheng, Tony Adkins, Torin Rudeen (Princeton), Tuo Wang, Varun Vats, William Royle (Grinnell), Xiang Peng, Xu Di, Yudong Sun, Yue Zhuo (Texas A&M), Yufui Ren, Zef RosnBrick, Zuyu Zhang。我们特别感谢那些带星号的名字，因为他们对如何改进此书给了非常好的建议。
+帮助过我们的人包括：Abhirami Senthilkumaran_, Adam Drescher_ \(WUSTL\), Adam Eggum, Aditya Venkataraman, Adriana Iamnitchi and class \(USF\), Ahmed Fikri_, Ajaykrishna Raghavan, Akiel Khan, Alex Wyler, Ali Razeen \(Duke\), AmirBehzad Eslami, Anand Mundada, Andrew Valencik \(Saint Mary’s\), Angela Demke Brown \(Toronto\), B. Brahmananda Reddy \(Minnesota\), Bala Subrahmanyam Kambala, Benita Bose, Biswajit Mazumder \(Clemson\), Bobby Jack, Bjorn Lindberg, Brennan Payne, Brian Gorman, Brian Kroth, Caleb Sumner \(Southern Adventist\), Cara Lauritzen, Charlotte Kissinger, Chien-Chung Shen \(Delaware\)_, Christoph Jaeger, Cody Hanson, Dan Soendergaard \(U. Aarhus\), David Hanle \(Grinnell\), David Hartman, Deepika Muthukumar, Dheeraj Shetty \(North Carolina State\), Dorian Arnold \(New Mexico\), Dustin Metzler, Dustin Passofaro, Eduardo Stelmaszczyk, Emad Sadeghi, Emily Jacobson, Emmett Witchel \(Texas\), Erik Turk, Ernst Biersack \(France\), Finn Kuusisto_, Glen Granzow \(College of Idaho\), Guilherme Baptista, Hamid Reza Ghasemi, Hao Chen, Henry Abbey, Hrishikesh Amur, Huanchen Zhang_, Huseyin Sular, Hugo Diaz, Itai Hass \(Toronto\), Jake Gillberg, Jakob Olandt, James Perry \(U. Michigan-Dearborn\)_, Jan Reineke \(Universitat des Saarlandes\), Jay Lim, Jerod Weinman \(Grinnell\), Jiao Dong \(Rutgers\), Jingxin Li, Joe Jean \(NYU\), Joel Kuntz \(Saint Mary’s\), Joel Sommers \(Colgate\), John Brady \(Grinnell\), Jonathan Perry \(MIT\), Jun He, Karl Wallinger, Kartik Singhal, Kaushik Kannan, Kevin Liu_, Lei Tian \(U. Nebraska-Lincoln\), Leslie Schultz, Liang Yin, Lihao Wang, Martha Ferris, Masashi Kishikawa \(Sony\), Matt Reichoff, Matty Williams, Meng Huang, Michael Walfish \(NYU\), Mike Griepentrog, Ming Chen \(Stonybrook\), Mohammed Alali \(Delaware\), Murugan Kandaswamy, Natasha Eilbert, Nathan Dipiazza, Nathan Sullivan, Neeraj Badlani \(N.C. State\), Nelson Gomez, Nghia Huynh \(Texas\), Nick Weinandt, Patricio Jara, Perry Kivolowitz, Radford Smith, Riccardo Mutschlechner, Ripudaman Singh, Robert Ordonez and class \(Southern Adventist\), Rohan Das \(Toronto\)_, Rohan Pasalkar \(Minnesota\), Ross Aiken, Ruslan Kiselev, Ryland Herrick, Samer Al-Kiswany, Sandeep Ummadi \(Minnesota\), Satish Chebrolu \(NetApp\), Satyanarayana Shanmugam_, Seth Pollen, Sharad Punuganti, Shreevatsa R., Sivaraman Sivaraman_, Srinivasan Thirunarayanan_, Suriyhaprakhas Balaram Sankari, Sy Jin Cheah, Teri Zhao \(EMC\), Thomas Griebel, Tongxin Zheng, Tony Adkins, Torin Rudeen \(Princeton\), Tuo Wang, Varun Vats, William Royle \(Grinnell\), Xiang Peng, Xu Di, Yudong Sun, Yue Zhuo \(Texas A&M\), Yufui Ren, Zef RosnBrick, Zuyu Zhang。我们特别感谢那些带星号的名字，因为他们对如何改进此书给了非常好的建议。
 
 ……（TODO）
 
@@ -70,20 +70,22 @@ Yin, Lihao Wang, Martha Ferris, Masashi Kishikawa (Sony), Matt Reichoff, Matty W
 
 我们撰写这本书的目的是激发你对操作系统的兴趣，希望你能够阅读更多这方面的材料，向你的教授了解这一领域正在进行的激动人心的研究，甚至参与到研究当中。操作系统是一个非常棒的领域（！），充满了激动人心的伟大想法，它们不断地重塑着计算机的历史。我们明白，不是所有人都会对这一领域感兴趣，但希望至少有一些，或者几个人会受到这本书的鼓舞。因为，一旦求知的火焰被点燃，你就真正能够开始做一些伟大的事。这就是教育真正的意义：前进，去学习许多崭新而令人着迷的主题，在学习中成长，最重要的是，找到能真正激励你，为你点燃心中的那团火的事物。
 
-*Andrea和Remzi夫妇*
-*威斯康星大学计算机科学系教授*
-*希望我们能成为点燃火种的人*[^6]
+_Andrea和Remzi夫妇_  
+_威斯康星大学计算机科学系教授_  
+_希望我们能成为点燃火种的人_[^6]
 
 ## 参考文献
 
-[^CK+08] “xv6操作系统” 
+[^CK+08] “xv6操作系统”
 
 [^F96]
 
 ## 注释
-[^1] （译者注）本书书名待定。
-[^2] 提示：香肠是用来吃的！或者，如果你是一个素食主义者，那香肠就是用来在看到的时候赶紧跑掉的。
-[^3] 一些离题的话：在这里，“免费”并不代表开源，也不表示这本书不受到通常的版权保护。“免费”的意思是，你可以把这些章节下载下来，用来学习操作系统。为什么这本书不像Linux那样是开源的呢？因为我们相信，在一本书中只有一种声音是很重要的，我们为了提供这种感觉努力了很久。当你阅读这本书的时候，你应该感觉像是有人在向你解释什么东西。这就是我们的方法。
-[^4]图灵奖是计算机科学界的最高奖项；它相当于诺贝尔奖，区别是你从未听说过它。
-[^5]如果这句话确实是他说的。就像许多名言一样，它的历史十分暧昧不明。
+
+[^1] （译者注）本书书名待定。  
+[^2] 提示：香肠是用来吃的！或者，如果你是一个素食主义者，那香肠就是用来在看到的时候赶紧跑掉的。  
+[^3] 一些离题的话：在这里，“免费”并不代表开源，也不表示这本书不受到通常的版权保护。“免费”的意思是，你可以把这些章节下载下来，用来学习操作系统。为什么这本书不像Linux那样是开源的呢？因为我们相信，在一本书中只有一种声音是很重要的，我们为了提供这种感觉努力了很久。当你阅读这本书的时候，你应该感觉像是有人在向你解释什么东西。这就是我们的方法。  
+[^4]图灵奖是计算机科学界的最高奖项；它相当于诺贝尔奖，区别是你从未听说过它。  
+[^5]如果这句话确实是他说的。就像许多名言一样，它的历史十分暧昧不明。  
 [^6]如果我们听起来像纵火犯，那么你的重点大概错了。如果这句话听起来过于做作和多愁善感，那是因为确实如此，不过请原谅我们吧。
+
