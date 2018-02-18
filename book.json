@@ -1,3 +1,7 @@
 {
-    "plugins": ["bibtex-cite"]
+    "plugins": ["bibtex-cite"], 
+    "pluginsConfig": {
+        "theme-default": {
+        }
+    }
 }
