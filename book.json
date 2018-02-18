@@ -1,7 +1,16 @@
 {
-    "plugins": ["bibtex-cite"], 
+    "plugins": ["bibtex-cite", "github-buttons"], 
     "pluginsConfig": {
         "theme-default": {
+        },
+        "github-buttons": {
+            "repo": "zhanghuimeng/operation-system-three-easy-pieces",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
         }
     }
 }
