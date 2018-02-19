@@ -1,5 +1,5 @@
 {
-    "plugins": ["bibtex-cite", "github-buttons"], 
+    "plugins": ["bibtex-cite", "github-buttons", "disqus", "katex"], 
     "pluginsConfig": {
         "theme-default": {
         },
@@ -11,6 +11,9 @@
                 "fork"
             ],
             "size": "small"
+        }, 
+        "disqus": {
+        "shortName": "operation-system-three-easy-pieces"
         }
     }
 }
