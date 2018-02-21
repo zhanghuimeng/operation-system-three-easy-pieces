@@ -1,8 +1,7 @@
 {
-    "plugins": ["bibtex-cite", "github-buttons", "disqus", "katex"], 
+    "plugins": ["bibtex-cite", "github-buttons", "disqus", "katex", "toggle-chapters"], 
     "pluginsConfig": {
-        "theme-default": {
-        },
+        "theme-default": {},
         "github-buttons": {
             "repo": "zhanghuimeng/operation-system-three-easy-pieces",
             "types": [
